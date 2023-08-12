@@ -1,18 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
 import React, {useState} from "react"
+//Esto es para importar la hoja de estilos de Boostrap For react, ¡IMPORTANTE!
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './Components/Navbar/Navbar';
+import Home from "./Components/Home/Home";
+import Footer from './Components/Footer/Footer';
+
 function App() {
-  const [num, setnum]=useState(0)
-  const [total, settotal]=useState(0)
-  const suma = () => {setnum(num+1)}
-  const resta = () => {setnum(num-1)}
-  const tota = () => {settotal(0 > 10)}
 
   return (
     <div className="App">
-      <h1>{num}</h1>
-      <button onClick={()=>suma()}>+</button>
-      <button onClick={()=>resta()}>-</button>
+      <Navbar />
+      <Home />
+      <Footer />
+      <div className='flextesty'>
+      </div>
     </div>
   );
 }

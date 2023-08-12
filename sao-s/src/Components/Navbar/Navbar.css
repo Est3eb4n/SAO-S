@@ -1,0 +1,16 @@
+.App{
+    text-align: center;
+}
+
+/* FLEX */
+.flextext{
+    display: flex;
+
+}
+Nav.Ittem{
+    display: none;
+}
+
+.navbar__container {
+    display: flex !important;
+}
